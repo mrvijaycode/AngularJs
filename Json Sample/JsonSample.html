@@ -1,0 +1,49 @@
+<html lang="en-US">
+  <head>
+    <title>JSON Sample</title>
+	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+	<script>
+	var myJson = [{
+			'name' : 'Nexus S',
+			'snippet' : 'Fast just got faster with Nexus S.'
+		}, {
+			'name' : 'Samsung',
+			'snippet' : 'Line 2.'
+		}, {
+			'name' : 'Motorola',
+			'snippet' : 'Line3.'
+		}, {
+			'name' : 'Micromax',
+			'snippet' : 'Line4.'
+		}, {
+			'name' : 'Celkon',
+			'snippet' : 'Line5.'
+		}, {
+			'name' : 'Xolo',
+			'snippet' : 'Line6.'
+		}, {
+			'name' : 'Apple',
+			'snippet' : 'Line7.'
+		}, {
+			'name' : 'LG',
+			'snippet' : 'Line8.'
+		}];
+
+	$(document).ready(function () {
+		//alert('Welcome to JSon..');
+		var listItemInfo = '<table>';
+		for (var i = 0; i < myJson.length; i++) {
+			listItemInfo += "<tr>";
+			listItemInfo += "<td>" + myJson[i].name + "</td>";
+			listItemInfo += "<td>" + myJson[i].snippet + "</td>";
+			listItemInfo += "</tr>";
+		}
+		listItemInfo += "</table>";
+		$('#divHtml').html(listItemInfo);
+	});
+	</script>
+  </head>
+  <body>
+  <div id="divHtml">welcome to the JSon Page..</div>
+  </body>
+</html>

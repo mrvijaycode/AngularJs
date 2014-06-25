@@ -6,7 +6,7 @@ function TodoCtrl($scope) {
 	    {text: 'Learn AngularJS',done: false }, 
 	    {text: 'Build an app',done: false},
 	    {text: 'Execute Program',done: false},
-	    {text: 'Close Program',done: false}
+	    {text: 'Close Program',done: true}
     ];
 
     $scope.getTotalTodos = function(){
